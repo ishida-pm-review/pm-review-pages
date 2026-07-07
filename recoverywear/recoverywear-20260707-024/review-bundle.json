@@ -1,0 +1,19 @@
+{
+  "schema_version": "3.0.0",
+  "bundle_id": "recoverywear-20260707-024",
+  "files": {
+    "base": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/recoverywear/recoverywear-20260707-024/review-bundle.base.json",
+      "sha256": "f98fed08fd469854ca20bb4ff77d49da2d1fc4cebb3c83b115c59aeeddfbf352"
+    },
+    "draft": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/recoverywear/recoverywear-20260707-024/review-bundle.draft.json",
+      "sha256": "83f40e8d270afc2e7e2f2d637c7d0a03d605b12db1cc36a114b449ab7d5bc6ca"
+    },
+    "final": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/recoverywear/recoverywear-20260707-024/review-bundle.final.json",
+      "sha256": null,
+      "pending": true
+    }
+  }
+}
