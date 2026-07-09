@@ -1,0 +1,222 @@
+{
+  "schema_version": "3.0.1",
+  "bundle_id": "uwaki-20260709-041",
+  "review_id": "rv-uwaki-20260709-041",
+  "created_at": "2026-07-09T18:52:03Z",
+  "public_url": "https://ishida-pm-review.github.io/pm-review-pages/uwaki/latest/index.html",
+  "commit_id": "08f82d8cf5832239e46cf3804db8b180a2de9bce",
+  "target_url": "https://www.uwaki-chousa-pro.com",
+  "runner": {
+    "host_hash": "965eed1d3790360ce6fd5d709f0240d119c5ef8172414ab05e6b955cb84f2ba0",
+    "os": "linux",
+    "arch": "x64",
+    "playwright_version": "1.61.1",
+    "chromium_version": "149.0.7827.55"
+  },
+  "capture_conditions": {
+    "viewport": {
+      "pc": {
+        "width": 1280,
+        "height": 800
+      },
+      "sp": {
+        "width": 375,
+        "height": 667
+      }
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "color_scheme": "light",
+    "reduced_motion": "no-preference",
+    "wait_strategy": "networkidle",
+    "wait_timeout_ms": 30000
+  },
+  "artifacts": {
+    "pc": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/uwaki/uwaki-20260709-041/pc.png",
+      "sha256": "7a0b4e7a50d40d824d2b50a8c082bed5bfb201b82f17181b034ddb96f4e4454b",
+      "bytes": 3955288
+    },
+    "sp": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/uwaki/uwaki-20260709-041/sp.png",
+      "sha256": "c2a6bf10bb90396b00bb2f6b4a2f732f8e40f9b0dd6961074d3f4ab1ca931cf6",
+      "bytes": 2626155
+    },
+    "html": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/uwaki/uwaki-20260709-041/public.html",
+      "sha256": "93211461132a97ffffcc4c80b488224b4e00aea0f7e9832deede5eb5d722628d",
+      "bytes": 105309
+    },
+    "dom": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/uwaki/uwaki-20260709-041/dom-summary.json",
+      "sha256": "fab71eb1ec7e6cf8ebf57d3654efc3c45e273dbcb72c4bc13bd6f60db0a8da9c",
+      "bytes": 675
+    },
+    "result": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/uwaki/uwaki-20260709-041/result.json",
+      "sha256": "d22e177b88b9b776b6e18b0006c189f8b24e5cccb83ff76e32fb7bb288492c3f",
+      "bytes": 6914
+    }
+  },
+  "checklist": {
+    "version": "3.0.0",
+    "results": [
+      {
+        "check_id": "PM-001",
+        "title": "公開HTML確認",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "html_parse"
+        ],
+        "details": "public.html ok (bytes=105309, body_text_chars=7348)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-002",
+        "title": "PC表示確認（1280px）",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "画像全体を確認したところ、主要コンテンツである見出し、本文、口コミ、比較表、ボタンなどの要素が正常に表示されており、重なりやテキストの重畳による読みにくさは見受けられません。また、要素がビューポートの右端からはみ出して内容が見切れている箇所もありません。レイアウトの崩壊や大部分が空白になっている部分もなく、画像やボタン、表の崩れも見られません。したがって、閲覧に支障はないと判断されます。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.95)",
+        "evidence_artifact": "pc"
+      },
+      {
+        "check_id": "PM-003",
+        "title": "SP表示確認（375px）",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "画像全体を確認したところ、スマホ幅375pxでの表示において、コンテンツが画面幅を超過して横方向に見切れている箇所は見当たりませんでした。また、タップ要素（ボタン・リンク）同士が重なっている部分もなく、文字が潰れて判読できない箇所もありませんでした。全体的にスマホ表示に適したレイアウトが維持されています。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.90)",
+        "evidence_artifact": "sp"
+      },
+      {
+        "check_id": "PM-004",
+        "title": "スクリーンショット確認",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "提供された2枚のスクリーンショットは、どちらも同じ記事ページの異なるデバイスでの表示を示しており、記事の内容が十分に含まれています。エラーページやメンテナンスページではなく、記事本文がしっかりと表示されているため、PMレビューの証跡として有効です。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.95)",
+        "evidence_artifact": "pc"
+      },
+      {
+        "check_id": "PM-005",
+        "title": "過去PM指摘事項",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "no PM directive violation detected (scanned_pattern_count=5)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-006",
+        "title": "Reader Flow",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "deterministic pre-check: H2構成が正定義（口コミ(悪→良)→手順→注意点→比較→FAQ→まとめ）に適合（R1隣接/R2順序/R3まとめ位置/R4段階記述 全適合）",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-007",
+        "title": "Reader Consistency",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "html_parse"
+        ],
+        "details": "本文中には、明確な矛盾は見当たりませんでした。特に、対応エリアについては神奈川県中心であることが一貫して記載されており、全国対応と矛盾する記述はありません。また、料金についても無料と有料の矛盾はなく、時間制料金であることが明確に説明されています。口コミについても、第三者の口コミが少ないことが明記されており、矛盾はありません。したがって、読者を混乱させるような論理矛盾は存在しないと判断されます。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.90)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-008",
+        "title": "Template Leak",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "regression_match"
+        ],
+        "details": "no template leak detected (scanned_rv_count=1)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-009",
+        "title": "Layout",
+        "status": "PASS",
+        "blocking": false,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "PCおよびスマートフォンの両方のスクリーンショットを確認したところ、レイアウトに関して特に問題は見当たりません。セクション間の間隔は均一であり、テキストや画像の整列も整っており、読者体験を損なう要素はありません。全体的に視覚的なバランスが取れており、情報が整理されているため、ユーザーが内容を理解しやすい構成になっています。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.90)",
+        "evidence_artifact": "pc"
+      },
+      {
+        "check_id": "PM-010",
+        "title": "Review Source Accessibility",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "html_parse"
+        ],
+        "details": "all review sources accessible (cite_count=5, cite_valid_href_count=5)",
+        "evidence_artifact": "dom"
+      },
+      {
+        "check_id": "PM-011",
+        "title": "Comparison Column Uniformity",
+        "status": "PASS",
+        "blocking": false,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "all 1 table(s) column-uniform - #0: widths=[4,4,4,4,4,4]",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-012",
+        "title": "Regression再発",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "regression_match"
+        ],
+        "details": "no regression recurrence (checked_rv_ids=[RV-001])",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-013",
+        "title": "Evidence Integrity",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "all artifact hashes verified (pc, sp, html, dom)",
+        "evidence_artifact": "dom"
+      }
+    ]
+  },
+  "regression": {
+    "checked_rv_ids": [
+      "RV-001"
+    ],
+    "failures": []
+  },
+  "integrity": {
+    "bundle_sha256": "0d8e23a91509911a1119305b8adeac44ed7abe191d7b80f6649b4bd80140a8cd",
+    "generated_by": "generate-base-bundle.js@1.0.0",
+    "immutable": true,
+    "git_tag": "bundle/uwaki-20260709-041"
+  }
+}

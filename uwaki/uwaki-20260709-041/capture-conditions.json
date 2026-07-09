@@ -1,0 +1,41 @@
+{
+  "bundle_id": "uwaki-20260709-041",
+  "public_url": "https://www.uwaki-chousa-pro.com",
+  "captured_at": "2026-07-09T18:51:05.846Z",
+  "viewport": {
+    "pc": {
+      "width": 1280,
+      "height": 800
+    },
+    "sp": {
+      "width": 375,
+      "height": 667
+    }
+  },
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+  "locale": "ja-JP",
+  "timezone": "Asia/Tokyo",
+  "color_scheme": "light",
+  "reduced_motion": "no-preference",
+  "network_throttle": "none",
+  "wait_strategy": "networkidle",
+  "wait_timeout_ms": 30000,
+  "artifacts": {
+    "pc": {
+      "path": "pc.png",
+      "sha256": "7a0b4e7a50d40d824d2b50a8c082bed5bfb201b82f17181b034ddb96f4e4454b"
+    },
+    "sp": {
+      "path": "sp.png",
+      "sha256": "c2a6bf10bb90396b00bb2f6b4a2f732f8e40f9b0dd6961074d3f4ab1ca931cf6"
+    },
+    "html": {
+      "path": "public.html",
+      "sha256": "93211461132a97ffffcc4c80b488224b4e00aea0f7e9832deede5eb5d722628d"
+    },
+    "dom": {
+      "path": "dom-summary.json",
+      "sha256": "09f857d24529b35357179abba081f091e81cd3476572fd437ceeb4915faff071"
+    }
+  }
+}

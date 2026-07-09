@@ -1,0 +1,19 @@
+{
+  "schema_version": "3.0.0",
+  "bundle_id": "uwaki-20260709-041",
+  "files": {
+    "base": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/uwaki/uwaki-20260709-041/review-bundle.base.json",
+      "sha256": "172c7dcc942a7d3e0f3011dcefafff9902da403b86475456fd1ecbbdb48f6dc5"
+    },
+    "draft": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/uwaki/uwaki-20260709-041/review-bundle.draft.json",
+      "sha256": "e8172a1edc94b78b785e14614e45cf54c0d626e6dc19e843e9a7463972e304ad"
+    },
+    "final": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/uwaki/uwaki-20260709-041/review-bundle.final.json",
+      "sha256": null,
+      "pending": true
+    }
+  }
+}
