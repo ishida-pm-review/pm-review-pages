@@ -1,0 +1,41 @@
+{
+  "bundle_id": "recoverywear-20260709-040",
+  "public_url": "https://recoverywear.net",
+  "captured_at": "2026-07-09T18:50:30.757Z",
+  "viewport": {
+    "pc": {
+      "width": 1280,
+      "height": 800
+    },
+    "sp": {
+      "width": 375,
+      "height": 667
+    }
+  },
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+  "locale": "ja-JP",
+  "timezone": "Asia/Tokyo",
+  "color_scheme": "light",
+  "reduced_motion": "no-preference",
+  "network_throttle": "none",
+  "wait_strategy": "networkidle",
+  "wait_timeout_ms": 30000,
+  "artifacts": {
+    "pc": {
+      "path": "pc.png",
+      "sha256": "3d6cbf7a59e3dd0a9f24f26a11d5ccf3ba4f94237eda66cb21950b7c14f13723"
+    },
+    "sp": {
+      "path": "sp.png",
+      "sha256": "4e455a91d5f57fe687c996c09f0df750bb0341454e46907fe5c2b12c80fbb62b"
+    },
+    "html": {
+      "path": "public.html",
+      "sha256": "83e219d85b36061072f6b092e1e899bcd4a4a49748d2c7520d9b100e7fd43f6b"
+    },
+    "dom": {
+      "path": "dom-summary.json",
+      "sha256": "d50c955f27f4c4a166b962c2de03f1e5e06022822a732a87a422d5452a114134"
+    }
+  }
+}

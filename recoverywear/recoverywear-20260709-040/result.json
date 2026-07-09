@@ -1,0 +1,167 @@
+{
+  "schema": "checklist-evaluator-result@1",
+  "bundle_id": "recoverywear-20260709-040",
+  "evaluated_at": "2026-07-09T18:50:30.871Z",
+  "evaluator_version": "checklist-evaluator/index.js@0.5.0",
+  "prompt_version": "prompts/checklist-evaluator-v1.md@1.2.1",
+  "model": "gpt-4o",
+  "results": [
+    {
+      "check_id": "PM-001",
+      "status": "PASS",
+      "details": "public.html ok (bytes=99213, body_text_chars=7624)",
+      "evidence_artifact": "html",
+      "evidence_source": [
+        "html_parse"
+      ],
+      "tier": "D",
+      "confidence": 1,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-002",
+      "status": "PASS",
+      "details": "画像全体を確認したところ、主要コンテンツである見出し、本文、口コミ、比較表、ボタンなどの要素が正常に表示されており、要素同士の重なりやテキストの重畳は見られません。また、要素がビューポート右端からはみ出して内容が見切れている箇所もありません。レイアウトの崩壊や画像・ボタン・表の明白な崩れもなく、全体的に内容が判別可能です。したがって、閲覧に支障はありません。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=1.00)",
+      "evidence_artifact": "pc",
+      "evidence_source": [
+        "screenshot_visual"
+      ],
+      "tier": "A",
+      "confidence": 1,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-003",
+      "status": "PASS",
+      "details": "画像全体を確認したところ、スマホ幅375pxでの表示において、コンテンツが画面幅を超過して横方向に見切れている箇所は見当たりません。また、タップ要素（ボタン・リンク）同士が重なっている部分もなく、文字が潰れて判読できない箇所もありませんでした。全体的にスマホ表示に適したレイアウトが維持されています。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.90)",
+      "evidence_artifact": "sp",
+      "evidence_source": [
+        "screenshot_visual"
+      ],
+      "tier": "A",
+      "confidence": 0.9,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-004",
+      "status": "PASS",
+      "details": "2枚のスクリーンショットは、同じ記事ページの異なるデバイスでの表示を示しており、内容が一致しています。記事本文がしっかりと含まれており、証跡として有効です。エラーページやメンテナンスページではなく、記事の内容が詳細に表示されています。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.95)",
+      "evidence_artifact": "pc",
+      "evidence_source": [
+        "screenshot_visual"
+      ],
+      "tier": "A",
+      "confidence": 0.95,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-005",
+      "status": "PASS",
+      "details": "no PM directive violation detected (scanned_pattern_count=5)",
+      "evidence_artifact": "html",
+      "evidence_source": [
+        "dom_analysis"
+      ],
+      "tier": "A",
+      "confidence": 1,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-006",
+      "status": "PASS",
+      "details": "deterministic pre-check: H2構成が正定義（口コミ(悪→良)→手順→注意点→比較→FAQ→まとめ）に適合（R1隣接/R2順序/R3まとめ位置/R4段階記述 全適合）",
+      "evidence_artifact": "html",
+      "evidence_source": [
+        "dom_analysis"
+      ],
+      "tier": "A",
+      "confidence": 1,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-007",
+      "status": "PASS",
+      "details": "本文中には、明確な矛盾は見当たりません。口コミが少ないと記載されている一方で、実際に掲載されている口コミは公式サイトのものであり、第三者の口コミが少ないことを説明しています。また、全国対応や無料といった条件に関する矛盾も見られません。料金や条件についても一貫しており、特に矛盾する記述は確認できませんでした。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.90)",
+      "evidence_artifact": "html",
+      "evidence_source": [
+        "html_parse"
+      ],
+      "tier": "A",
+      "confidence": 0.9,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-008",
+      "status": "PASS",
+      "details": "no template leak detected (scanned_rv_count=1)",
+      "evidence_artifact": "html",
+      "evidence_source": [
+        "regression_match"
+      ],
+      "tier": "D",
+      "confidence": 1,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-009",
+      "status": "PASS",
+      "details": "PCおよびスマートフォンの両方のスクリーンショットを確認したところ、レイアウトは整然としており、余白や整列に問題は見られません。セクション間の区切りも適切で、表やカードの整形も良好です。読者体験を損なうようなレイアウト不整は確認できませんでした。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.95)",
+      "evidence_artifact": "pc",
+      "evidence_source": [
+        "screenshot_visual"
+      ],
+      "tier": "A",
+      "confidence": 0.95,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-010",
+      "status": "PASS",
+      "details": "all review sources accessible (cite_count=5, cite_valid_href_count=5)",
+      "evidence_artifact": "dom",
+      "evidence_source": [
+        "html_parse"
+      ],
+      "tier": "D",
+      "confidence": 1,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-011",
+      "status": "PASS",
+      "details": "all 1 table(s) column-uniform - #0: widths=[4,4,4,4,4,4,4]",
+      "evidence_artifact": "html",
+      "evidence_source": [
+        "dom_analysis"
+      ],
+      "tier": "D",
+      "confidence": 1,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-012",
+      "status": "PASS",
+      "details": "no regression recurrence (checked_rv_ids=[RV-001])",
+      "evidence_artifact": "html",
+      "evidence_source": [
+        "regression_match"
+      ],
+      "tier": "D",
+      "confidence": 1,
+      "error_code": null
+    },
+    {
+      "check_id": "PM-013",
+      "status": "PASS",
+      "details": "all artifact hashes verified (pc, sp, html, dom)",
+      "evidence_artifact": "dom",
+      "evidence_source": [
+        "dom_analysis"
+      ],
+      "tier": "D",
+      "confidence": 1,
+      "error_code": null
+    }
+  ],
+  "errors": []
+}
