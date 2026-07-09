@@ -1,0 +1,41 @@
+{
+  "bundle_id": "hikkoshi-matome-com-20260709-044",
+  "public_url": "https://hikkoshi-matome.com",
+  "captured_at": "2026-07-09T21:30:46.861Z",
+  "viewport": {
+    "pc": {
+      "width": 1280,
+      "height": 800
+    },
+    "sp": {
+      "width": 375,
+      "height": 667
+    }
+  },
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+  "locale": "ja-JP",
+  "timezone": "Asia/Tokyo",
+  "color_scheme": "light",
+  "reduced_motion": "no-preference",
+  "network_throttle": "none",
+  "wait_strategy": "networkidle",
+  "wait_timeout_ms": 30000,
+  "artifacts": {
+    "pc": {
+      "path": "pc.png",
+      "sha256": "75e8610d4ece5c8b141ad57078ada6383e9c2139588a7c04e2597ccf8a5012e1"
+    },
+    "sp": {
+      "path": "sp.png",
+      "sha256": "efae79861a82d043a2a6b64d640c7f52f27e26182d4dfebad209a5b32c2e38e7"
+    },
+    "html": {
+      "path": "public.html",
+      "sha256": "036e8ec9a13cd4601b1ebad61c43800fff73379d9ec527c4c76382bbfe32d25e"
+    },
+    "dom": {
+      "path": "dom-summary.json",
+      "sha256": "e4e960a7cdc3e848183fb2e275d2f8a952cefaf15e5db5c72e19c30f3570986c"
+    }
+  }
+}
