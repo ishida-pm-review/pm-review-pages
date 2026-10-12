@@ -1,0 +1,232 @@
+{
+  "schema_version": "3.0.1",
+  "bundle_id": "consul-20261012-149",
+  "review_id": "rv-consul-20261012-149",
+  "created_at": "2026-10-12T05:12:20Z",
+  "public_url": "https://ishida-pm-review.github.io/pm-review-pages/consul/latest/index.html",
+  "commit_id": "f4fc23e6a4701056ebb85c4fa01cb65eefe01e1a",
+  "target_url": "https://www.consul-tenshoku.com",
+  "runner": {
+    "host_hash": "c278f5569b1072258c3e6b724dc2cdf19ce3d90cb7c151458c15414d2e7b492d",
+    "os": "linux",
+    "arch": "x64",
+    "playwright_version": "1.61.1",
+    "chromium_version": "149.0.7827.55"
+  },
+  "capture_conditions": {
+    "viewport": {
+      "pc": {
+        "width": 1280,
+        "height": 800
+      },
+      "sp": {
+        "width": 375,
+        "height": 667
+      }
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "color_scheme": "light",
+    "reduced_motion": "no-preference",
+    "wait_strategy": "networkidle",
+    "wait_timeout_ms": 30000
+  },
+  "artifacts": {
+    "pc": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/consul/consul-20261012-149/pc.png",
+      "sha256": "9f7538d4dc9f94bcd2277c1bfb996688a4de10c425dc6d4d9ff721962172c5d9",
+      "bytes": 3575768
+    },
+    "sp": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/consul/consul-20261012-149/sp.png",
+      "sha256": "0b3cd5bac6041f3ba48f306817f67af49778f9de65f49427f2a338dc897b0819",
+      "bytes": 2427992
+    },
+    "html": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/consul/consul-20261012-149/public.html",
+      "sha256": "d9a50d9cb2a56842b0d07b9cc3e2759250c1b56acdb2eeafef6c953ad280117a",
+      "bytes": 107953
+    },
+    "dom": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/consul/consul-20261012-149/dom-summary.json",
+      "sha256": "adfee5a4450f2212f28ef9a6f85e1a0f15aac420d479b61646acdb29b3dd6040",
+      "bytes": 688
+    },
+    "result": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/consul/consul-20261012-149/result.json",
+      "sha256": "a1b059c946aa431fa812e795ba2edaa6c5c47d06af448df0037ed57c71b7e1b0",
+      "bytes": 7084
+    }
+  },
+  "checklist": {
+    "version": "3.0.0",
+    "results": [
+      {
+        "check_id": "PM-001",
+        "title": "公開HTML確認",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "html_parse"
+        ],
+        "details": "public.html ok (bytes=107953, body_text_chars=7965)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-002",
+        "title": "PC表示確認（1280px）",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "画像全体を確認したところ、主要コンテンツである見出し、本文、ボタン、比較表などが正常に表示されており、要素同士の重なりやテキストの重畳は見られません。また、要素がビューポートの右端からはみ出して内容が見切れている箇所もありません。レイアウトの崩壊や大部分が空白であるといった問題もなく、画像やボタン、表の崩れも見受けられませんでした。したがって、読者が正常に閲覧できる状態です。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=1.00)",
+        "evidence_artifact": "pc"
+      },
+      {
+        "check_id": "PM-003",
+        "title": "SP表示確認（375px）",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "画像全体を確認したところ、スマホ幅375pxでの表示において、コンテンツが画面幅を超過して横方向に見切れている箇所は見当たりませんでした。また、タップ要素同士が重なっている部分もなく、文字が潰れて判読できない箇所もありませんでした。全体的にスマホ表示に適したレイアウトが維持されています。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.95)",
+        "evidence_artifact": "sp"
+      },
+      {
+        "check_id": "PM-004",
+        "title": "スクリーンショット確認",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "提供された2枚のスクリーンショットは、どちらも同じ記事ページの異なるデバイスでの表示を示しており、記事の内容がしっかりと含まれています。全面白や全面黒の画像ではなく、エラーページやメンテナンスページでもありません。また、2枚の画像は同じページの異なるビューを示しており、証跡として有効です。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.95)",
+        "evidence_artifact": "pc"
+      },
+      {
+        "check_id": "PM-005",
+        "title": "過去PM指摘事項",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "no PM directive violation detected (scanned_pattern_count=5)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-006",
+        "title": "Reader Flow",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "deterministic pre-check: H2構成が正定義（口コミ(悪→良)→手順→注意点→比較→FAQ→まとめ）に適合（R1隣接/R2順序/R3まとめ位置/R4段階記述 全適合）",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-007",
+        "title": "Reader Consistency",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "html_parse"
+        ],
+        "details": "本文内において、明確な矛盾は見当たりませんでした。口コミに関しては、悪い口コミ・良い口コミの両方で「独立した第三者の声は確認できませんでした」と記載されており、口コミが少ないことを明示しています。また、全国対応としながらも地方拠点の有無が未確認であることを明記し、電話・オンラインでの相談が可能であることを補足しています。料金についても「無料」と記載されており、他の箇所で料金が発生する旨の記載はありません。これらの記述は矛盾なく整合性が取れていると判断されます。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.90)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-008",
+        "title": "Template Leak",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "regression_match"
+        ],
+        "details": "no template leak detected (scanned_rv_count=1)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-009",
+        "title": "Layout",
+        "status": "PASS",
+        "blocking": false,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "PCおよびSPの両方のスクリーンショットにおいて、レイアウトは整然としており、セクション間の間隔も均一である。テキストや画像の整列も適切であり、読者体験を損なうようなレイアウトの不整は見受けられない。全体的に視覚的なバランスが取れており、情報が整理されているため、レイアウト品質に問題はないと判断される。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.95)",
+        "evidence_artifact": "pc"
+      },
+      {
+        "check_id": "PM-010",
+        "title": "Review Source Accessibility",
+        "status": "WARN",
+        "blocking": true,
+        "evidence_source": [
+          "html_parse"
+        ],
+        "details": "no <cite> elements found (cite_count=0). Either the page has no reviews or review sources are missing - cannot be distinguished deterministically",
+        "evidence_artifact": "dom"
+      },
+      {
+        "check_id": "PM-011",
+        "title": "Comparison Column Uniformity",
+        "status": "PASS",
+        "blocking": false,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "all 1 table(s) column-uniform - #0: widths=[4,4,4,4,4,4,4,4,4]",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-012",
+        "title": "Regression再発",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "regression_match"
+        ],
+        "details": "no regression recurrence (checked_rv_ids=[RV-001])",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-013",
+        "title": "Evidence Integrity",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "all artifact hashes verified (pc, sp, html, dom)",
+        "evidence_artifact": "dom"
+      }
+    ]
+  },
+  "regression": {
+    "checked_rv_ids": [
+      "RV-001"
+    ],
+    "failures": []
+  },
+  "integrity": {
+    "bundle_sha256": "a5a40885d2e11ce55b1b42396e7928c25e0e77603d91da58db9729891ecdb8ff",
+    "generated_by": "verdict-engine/index.js@1.0.0",
+    "immutable": true,
+    "git_tag": "bundle/consul-20261012-149-draft"
+  },
+  "verdict": {
+    "draft": {
+      "status": "APPROVED",
+      "generated_at": "2026-10-12T05:12:23Z",
+      "generated_by": "verdict-engine/index.js@1.0.0",
+      "prompt_version": "prompts/review-draft-v1.md@1.0.0",
+      "summary": "全チェック項目PASS・回帰検査PASSです。全体で13項目中12項目が合格し、警告が1件ありますが、致命的な問題はありません。",
+      "block_reasons": []
+    }
+  }
+}
