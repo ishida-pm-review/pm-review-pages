@@ -1,0 +1,19 @@
+{
+  "schema_version": "3.0.0",
+  "bundle_id": "hikkoshi-matome-com-20261018-269",
+  "files": {
+    "base": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/hikkoshi-matome-com/hikkoshi-matome-com-20261018-269/review-bundle.base.json",
+      "sha256": "6491d03b03d9b6998acfefbb845e0e19855e8997dcdab4b700e6014e1f858fbf"
+    },
+    "draft": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/hikkoshi-matome-com/hikkoshi-matome-com-20261018-269/review-bundle.draft.json",
+      "sha256": "40de7f59c93b2720291c1134266102792616bccfadfce08934e203a1f439053a"
+    },
+    "final": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/hikkoshi-matome-com/hikkoshi-matome-com-20261018-269/review-bundle.final.json",
+      "sha256": null,
+      "pending": true
+    }
+  }
+}
