@@ -1,0 +1,222 @@
+{
+  "schema_version": "3.0.1",
+  "bundle_id": "hikkoshi-matome-com-20261018-273",
+  "review_id": "rv-hikkoshi-matome-com-20261018-273",
+  "created_at": "2026-10-18T02:36:06Z",
+  "public_url": "https://ishida-pm-review.github.io/pm-review-pages/hikkoshi-matome-com/latest/index.html",
+  "commit_id": "32b8c2bd145f36c9487a93882d9ec17c2c309652",
+  "target_url": "https://hikkoshi-matome.com",
+  "runner": {
+    "host_hash": "babcff27cb95370a27e4e0369f1ec2d79f8f5a409060570b8cc0b7b9ef391a55",
+    "os": "linux",
+    "arch": "x64",
+    "playwright_version": "1.61.1",
+    "chromium_version": "149.0.7827.55"
+  },
+  "capture_conditions": {
+    "viewport": {
+      "pc": {
+        "width": 1280,
+        "height": 800
+      },
+      "sp": {
+        "width": 375,
+        "height": 667
+      }
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "color_scheme": "light",
+    "reduced_motion": "no-preference",
+    "wait_strategy": "networkidle",
+    "wait_timeout_ms": 30000
+  },
+  "artifacts": {
+    "pc": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/hikkoshi-matome-com/hikkoshi-matome-com-20261018-273/pc.png",
+      "sha256": "6d49e6a542cc355b0890f9573729bc8fcf3952aedecca4d8f0e384c4558a009d",
+      "bytes": 3811247
+    },
+    "sp": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/hikkoshi-matome-com/hikkoshi-matome-com-20261018-273/sp.png",
+      "sha256": "8b24610b80b2487a0b22525d87f72075f055dcb25bb57964e5aa9b7b52dd9a75",
+      "bytes": 2795698
+    },
+    "html": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/hikkoshi-matome-com/hikkoshi-matome-com-20261018-273/public.html",
+      "sha256": "9e6c237bd5384818f50fe8c8a3e61ac6fd0e33e781571d4bab57402fee8fef86",
+      "bytes": 104957
+    },
+    "dom": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/hikkoshi-matome-com/hikkoshi-matome-com-20261018-273/dom-summary.json",
+      "sha256": "dd7bb8e789c02b998675f2638cc19fb4af197f5987f096ff11d35dd2fef9c75d",
+      "bytes": 815
+    },
+    "result": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/hikkoshi-matome-com/hikkoshi-matome-com-20261018-273/result.json",
+      "sha256": "1d1aa742ca72a17ab255e6a542e76c83515635f79829a0d00c5fd02b015b6cb5",
+      "bytes": 7071
+    }
+  },
+  "checklist": {
+    "version": "3.0.0",
+    "results": [
+      {
+        "check_id": "PM-001",
+        "title": "公開HTML確認",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "html_parse"
+        ],
+        "details": "public.html ok (bytes=104957, body_text_chars=9236)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-002",
+        "title": "PC表示確認（1280px）",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "画像全体を確認したところ、主要コンテンツである見出し、本文、口コミ、比較表、ボタンなどの要素が正常に表示されており、要素同士の重なりやテキストの重畳による読みにくさは見受けられません。また、要素がビューポートの右端からはみ出して内容が見切れている箇所もありません。レイアウトの崩壊や大部分が空白になっている部分もなく、画像やボタン、表の崩れも見られませんでした。したがって、閲覧に支障はないと判断されます。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.95)",
+        "evidence_artifact": "pc"
+      },
+      {
+        "check_id": "PM-003",
+        "title": "SP表示確認（375px）",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "画像を確認したところ、スマホ幅375pxでの表示において、コンテンツが画面幅を超過して横方向に見切れている箇所は見当たりません。また、タップ要素同士が重なっている部分もなく、文字が潰れて判読できない箇所もありませんでした。全体的にスマホ表示に適したレイアウトが維持されています。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.90)",
+        "evidence_artifact": "sp"
+      },
+      {
+        "check_id": "PM-004",
+        "title": "スクリーンショット確認",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "2枚のスクリーンショットは、同一の記事ページを異なるデバイス（PCとスマートフォン）で表示したものであり、内容が一致しています。記事本文がしっかりと含まれており、証跡として有効です。エラーページやメンテナンスページではなく、実際のコンテンツが表示されています。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.95)",
+        "evidence_artifact": "pc"
+      },
+      {
+        "check_id": "PM-005",
+        "title": "過去PM指摘事項",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "no PM directive violation detected (scanned_pattern_count=5)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-006",
+        "title": "Reader Flow",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "deterministic pre-check: H2構成が正定義（口コミ(悪→良)→手順→注意点→比較→FAQ→まとめ）に適合（R1隣接/R2順序/R3まとめ位置/R4段階記述 全適合）",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-007",
+        "title": "Reader Consistency",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "html_parse"
+        ],
+        "details": "本文中において、電気の手続きサポートセンターのサービス利用料が完全無料であることが一貫して記載されています。また、キャッシュバックに関する条件も明示されており、矛盾する記述は見当たりません。対応エリアについても、10エリアに対応していることが明確に示されており、全国対応と矛盾する記述はありません。したがって、本文内に矛盾は見られません。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.90)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-008",
+        "title": "Template Leak",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "regression_match"
+        ],
+        "details": "no template leak detected (scanned_rv_count=1)",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-009",
+        "title": "Layout",
+        "status": "WARN",
+        "blocking": false,
+        "evidence_source": [
+          "screenshot_visual"
+        ],
+        "details": "PCおよびスマートフォンの両方のスクリーンショットにおいて、全体的なレイアウトは整っているが、いくつかの軽微な不整が見受けられる。具体的には、セクション間の余白が不均一である箇所があり、特にテキストとボタンの間のスペースが狭く、視覚的な区切りが不明瞭な部分がある。また、スマートフォン表示では、テキストが詰まりすぎている箇所があり、読みやすさに影響を与えている。これらの点が読者体験を若干損なう可能性があるため、WARNとする。 (ai: gpt-4o@prompts/checklist-evaluator-v1.md@1.2.1, conf=0.80)",
+        "evidence_artifact": "pc"
+      },
+      {
+        "check_id": "PM-010",
+        "title": "Review Source Accessibility",
+        "status": "WARN",
+        "blocking": true,
+        "evidence_source": [
+          "html_parse"
+        ],
+        "details": "no <cite> elements found (cite_count=0). Either the page has no reviews or review sources are missing - cannot be distinguished deterministically",
+        "evidence_artifact": "dom"
+      },
+      {
+        "check_id": "PM-011",
+        "title": "Comparison Column Uniformity",
+        "status": "PASS",
+        "blocking": false,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "all 1 table(s) column-uniform - #0: widths=[4,4,4,4,4,4,4,4,4,4,4]",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-012",
+        "title": "Regression再発",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "regression_match"
+        ],
+        "details": "no regression recurrence (checked_rv_ids=[RV-001])",
+        "evidence_artifact": "html"
+      },
+      {
+        "check_id": "PM-013",
+        "title": "Evidence Integrity",
+        "status": "PASS",
+        "blocking": true,
+        "evidence_source": [
+          "dom_analysis"
+        ],
+        "details": "all artifact hashes verified (pc, sp, html, dom)",
+        "evidence_artifact": "dom"
+      }
+    ]
+  },
+  "regression": {
+    "checked_rv_ids": [
+      "RV-001"
+    ],
+    "failures": []
+  },
+  "integrity": {
+    "bundle_sha256": "eb9fc28f6e87887b0cf55628b82bd825f146162a289636e7e1a4cc31d0557c9b",
+    "generated_by": "generate-base-bundle.js@1.0.0",
+    "immutable": true,
+    "git_tag": "bundle/hikkoshi-matome-com-20261018-273"
+  }
+}
