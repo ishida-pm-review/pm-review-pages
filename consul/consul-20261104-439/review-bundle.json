@@ -1,0 +1,19 @@
+{
+  "schema_version": "3.0.0",
+  "bundle_id": "consul-20261104-439",
+  "files": {
+    "base": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/consul/consul-20261104-439/review-bundle.base.json",
+      "sha256": "bf90e77921a0ecbb60bb82e161162dbc8c38ffdce46849810a6c12d4dd97b723"
+    },
+    "draft": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/consul/consul-20261104-439/review-bundle.draft.json",
+      "sha256": "9186adf2576c902ef66e41b569a8475d701d8ed3447d77e638a4dc611dacd142"
+    },
+    "final": {
+      "url": "https://ishida-pm-review.github.io/pm-review-pages/consul/consul-20261104-439/review-bundle.final.json",
+      "sha256": null,
+      "pending": true
+    }
+  }
+}

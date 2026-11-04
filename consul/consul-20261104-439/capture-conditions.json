@@ -1,0 +1,41 @@
+{
+  "bundle_id": "consul-20261104-439",
+  "public_url": "https://www.consul-tenshoku.com",
+  "captured_at": "2026-11-04T22:32:06.030Z",
+  "viewport": {
+    "pc": {
+      "width": 1280,
+      "height": 800
+    },
+    "sp": {
+      "width": 375,
+      "height": 667
+    }
+  },
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+  "locale": "ja-JP",
+  "timezone": "Asia/Tokyo",
+  "color_scheme": "light",
+  "reduced_motion": "no-preference",
+  "network_throttle": "none",
+  "wait_strategy": "networkidle",
+  "wait_timeout_ms": 30000,
+  "artifacts": {
+    "pc": {
+      "path": "pc.png",
+      "sha256": "37fff79e5534363de9b4b211027004d9f85fd81ac2e9e02785a84c004959d9d9"
+    },
+    "sp": {
+      "path": "sp.png",
+      "sha256": "7035f7726a482522f48335dfb36d3234a781c1999ea2d1f0b57b7d2906208697"
+    },
+    "html": {
+      "path": "public.html",
+      "sha256": "2e2ba0e4b5a6b3df85a93e0204afc1a0fcfb702085d21f827739f8fc6d1a7e0b"
+    },
+    "dom": {
+      "path": "dom-summary.json",
+      "sha256": "4583163c8537e75271e5e1ecdb08289d096cc1d8db463849732400a1e1183404"
+    }
+  }
+}
